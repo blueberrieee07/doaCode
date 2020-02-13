@@ -9,17 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Den of Art</title>
+    <title>SB Admin 2 - Blankeesee</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/@fullcalendar/core/main.css">
-    <link rel="stylesheet" href="node_modules/@fullcalendar/daygrid/main.css">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -61,7 +58,20 @@
                             <div class="card shadow mb-4">
 
                                 <div class="card-body">
-                                    <div id='calendar'></div>
+
+                                    <form action="add_db.php" method="POST">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="user" required>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" name="pass" required>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
                                 </div>
 
                             </div>
@@ -124,19 +134,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script src='node_modules/@fullcalendar/core/main.js'></script>
-    <script src='node_modules/@fullcalendar/daygrid/main.js'></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: ['dayGrid']
-            });
-
-            calendar.render();
-        });
-    </script>
 
 </body>
 

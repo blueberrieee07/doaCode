@@ -60,7 +60,11 @@
                           <label class="custom-control-label" for="customCheck">Remember Me</label>
                         </div>
                       </div>
+<<<<<<< HEAD
                       <a href="index.php" class="btn btn-primary btn-user btn-block">
+=======
+                      <a href="index.html" class="btn btn-primary btn-user btn-block">
+>>>>>>> 01c011bf4d9c06df30d29ff800d8ff2e6c66d9de
                         Login
                       </a>
 
