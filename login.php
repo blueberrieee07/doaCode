@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-blue-black">
 
 
   <div class="container">
