@@ -1,8 +1,8 @@
 <?php
-$localhost_db = 'localhost'; //host
-$username_db = 'root'; //username ฐานข้อมููล
-$password_db = ''; //password ฐานข้อมููล
-$db_name = 'den_of_art_db'; //ชื่อ ฐานข้อมููล
+$localhost_db = '103.22.183.220'; //host
+$username_db = 'smomscic_doaCode'; //username ฐานข้อมููล
+$password_db = 'jG4rti7iw'; //password ฐานข้อมููล
+$db_name = 'smomscic_doaCode'; //ชื่อ ฐานข้อมููล
 
 $condb = mysqli_connect("$localhost_db", "$username_db", "$password_db", "$db_name") or die("Error: " . mysqli_error($condb));
 

@@ -5,7 +5,7 @@
    <!-- Sidebar - Brand -->
    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
      <div class="sidebar-brand-icon rotate-n-15">
-       <i class="fas fa-laugh-wink"></i>
+       <i class="fas fa-tooth"></i>
      </div>
      <div class="Den of Art text mx-3">Den of Art <sup>12</sup></div>
    </a>
@@ -15,8 +15,8 @@
 
    <!-- Nav Item - กลับไปหน้าหลัก -->
    <li class="nav-item active">
-     <a class="nav-link" href="index.html">
-       <i class="fas fa-fw fa-tachometer-alt"></i>
+     <a class="nav-link" href="index.php">
+       <i class="fas fa-fw fa-home"></i>
        <span>หน้าหลัก</span></a>
    </li>
 
@@ -49,6 +49,8 @@
 
    <!-- Heading -->
    <div class="sidebar-heading">
+
+
      เมนู
    </div>
 
@@ -74,33 +76,38 @@
    <!-- Nav Item - Charts -->
    <li class="nav-item">
      <a class="nav-link" href="charts.html">
-       <i class="fas fa-fw fa-chart-area"></i>
+       <i class="fas fa-fw fa-tags"></i>
        <span>ราคา&โปรโมชั่น</span></a>
    </li>
 
    <!-- Nav Item - Tables -->
    <li class="nav-item">
-     <a class="nav-link" href="tables.html">
-       <i class="fas fa-fw fa-table"></i>
+     <a class="nav-link" href="calendar.">
+       <i class="fas fa-fw fa-calendar-day"></i>
        <span>ปฏิทินการรักษา</span></a>
    </li>
    <!-- Nav Item - Tables -->
    <li class="nav-item">
      <a class="nav-link" href="tables.html">
-       <i class="fas fa-fw fa-table"></i>
+       <i class="fas fa-fw fa-address-book"></i>
        <span>เกี่ยวกับเรา</span></a>
    </li>
    <!-- Nav Item - Tables -->
    <li class="nav-item">
      <a class="nav-link" href="tables.html">
-       <i class="fas fa-fw fa-table"></i>
+       <i class="fas fa-fw fa-user-nurse"></i>
        <span>ทันตแพทย์</span></a>
    </li>
    <!-- Nav Item - Tables -->
    <li class="nav-item">
      <a class="nav-link" href="tables.html">
-       <i class="fas fa-fw fa-table"></i>
+       <i class="fas fa-fw fa-hand-holding-usd"></i>
        <span>ค่าบริการ</span></a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link" href="login.php">
+       <i class="fas fa-fw fa-sign-out-alt"></i>
+       <span>logout</span></a>
    </li>
 
    <!-- Divider -->
