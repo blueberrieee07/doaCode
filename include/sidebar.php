@@ -82,7 +82,7 @@
 
    <!-- Nav Item - Tables -->
    <li class="nav-item">
-     <a class="nav-link" href="calendar.">
+     <a class="nav-link" href="calendar.php">
        <i class="fas fa-fw fa-calendar-day"></i>
        <span>ปฏิทินการรักษา</span></a>
    </li>
