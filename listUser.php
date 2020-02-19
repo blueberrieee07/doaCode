@@ -1,3 +1,8 @@
+<?php
+include('include/condb.php');
+$query = "SELECT * FROM users where 1 ";
+$result = mysqli_query($condb, $query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +22,8 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/style.css">
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -59,19 +65,33 @@
 
                                 <div class="card-body">
 
-                                    <form action="add_db.php" method="POST">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="user" required>
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th width="10%">#</th>
+                                                <th width="30%">ชื่อ - นามสกุล</th>
+                                                <th width="15%">เพศ</th>
+                                                <th width="20%">email</th>
+                                                <th width="10%">จัดการ</th>
+                                            </tr>
+                                        </thead>
 
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" name="pass" required>
-                                        </div>
+                                        <tbody>
+                                            <?php while ($row = mysqli_fetch_array($result)) { ?>
+                                                <tr>
+                                                    <td class="text-center"><?php echo ++$i; ?></td>
+                                                    <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
+                                                    <td><?php echo $row['sax']; ?></td>
+                                                    <td><?php echo $row['email']; ?></td>
+                                                    <td class="text-center">
+                                                        <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
+                                                        ||
+                                                        <a href="del_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
+                                                </tr>
+                                            <?php  } ?>
+                                        </tbody>
+                                    </table>
 
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </form>
                                 </div>
 
                             </div>
@@ -134,7 +154,13 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable();
+        });
+    </script>
 </body>
 
 </html>

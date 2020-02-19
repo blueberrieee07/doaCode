@@ -39,9 +39,9 @@
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-7 d-none d-lg-block bg-login-image">
-                <img src="img/logo.jpg" alt="">
-              </div>
+
+              <img src="img/logo2.png" alt="">
+
               <div class="col-lg-5">
                 <div class="p-5">
                   <div class="text-center">
@@ -61,7 +61,7 @@
                       </div>
                     </div>
 
-                    <button class="btn btn-primary btn-user btn-block" type="submit">Login</button>
+                    <button class="col-sm-12 btn btn-primary btn-user btn-block" type="submit">Login</button>
 
                     <hr>
                     <div class="text-center">

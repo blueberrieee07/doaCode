@@ -17,10 +17,14 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
 
+
+    </style>
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-blue-black">
 
     <div class="container">
 
@@ -29,7 +33,7 @@
                 <!-- Nested Row within Card Body -->
                 <div class="row">
 
-                    <img src="img/logo.jpg" alt="">
+                    <img src="img/logo2.png" alt="">
                     <div class="p-5">
                         <div class="text-center">
                             <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
@@ -65,6 +69,7 @@
 
                                 <br>
                                 <br>
+                            </button>
                         </form>
 
 
