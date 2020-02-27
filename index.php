@@ -14,10 +14,21 @@
     <!-- Custom fonts for this template-->
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+=======
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+>>>>>>> a65b7b965fd20b3aad5b8db23aa96d64be89ac00
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    .card-body:hover {
+        color: red;
+    }
+    </style>
 </head>
 
 <body id="page-top">
@@ -99,7 +110,9 @@
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -133,6 +146,7 @@
                     <!-- Color System -->
                     <div class="row">
                         <div class="col-lg-6 mb-4">
+<<<<<<< HEAD
                             <div class="card bg-primary text-white shadow">
                                 <div class="card-body">
                                     <button class="btn btn-sm btn-primary">"ข้อมูลผู้ใช้งาน</button>
@@ -162,27 +176,73 @@
                                 <div class="card-body">
                                     แจ้งเตือน
                                     <div class="text-white-50 small"></div>
+=======
+                            <div class="card text-white bg-secondary mb-3 ">
+                                
+                                    <div class="card-body" onclick="window.location.href = 'ilstUser.php';">
+
+                                        ประวัติผู้ใช้งาน
+                                   
+>>>>>>> a65b7b965fd20b3aad5b8db23aa96d64be89ac00
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-6 mb-4">
-                            <div class="card bg-danger text-white shadow">
-                                <div class="card-body">
-                                    ติดต่อเรา
-                                    <div class="text-white-50 small"></div>
+                         
+                                <div class="card text-white bg-danger mb-3 ">
+                                    <div class="card-body" onclick="window.location.href = 'ilstUser1.php';">
+                                        ประวัติผู้รับบริการทันตกรรม
+
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-6 mb-4">
-                            <div class="card bg-secondary text-white shadow">
-                                <div class="card-body">
+                         
+                         <div class="card text-white bg-dark mb-3">
+                             <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
+                                 ประวัติการรักษา
+
+                         </div>
+                     </div>
+                 </div>
+
+              
+                 <div class="col-lg-6 mb-4">
+                         
+                         <div class="card text-white bg-primary mb-3">
+                             <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
+                                 ข้อมูลการนัดหมาย
+
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-6 mb-4">
+                         
+                         <div class="card text-white bg-warning mb-3">
+                             <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
+                                 พิมพ์รายงาน
+
+                         </div>
+                     </div>
+                 </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="card bg-primary ">
+                            <div class="card bg-info text-white shadow">  
+                                <div class="card-body" class="card-body" onclick="window.location.href = 'ilstUser5.php';">
                                     ข่าวทันตกรรม
-                                    <div class="text-white-50 small"></div>
+                                    
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
 
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                aria-labelledby="dropdownMenuLink">
                                 <div class="dropdown-header">Dropdown Header:</div>
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
@@ -196,7 +256,8 @@
                     <!-- Pie Chart -->
                     <div class="card shadow mb-4">
                         <!-- Card Header - Dropdown -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                            aria-labelledby="dropdownMenuLink">
                             <div class="dropdown-header">Dropdown Header:</div>
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -221,7 +282,8 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
