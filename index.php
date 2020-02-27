@@ -176,10 +176,12 @@
                  <div class="col-lg-6 mb-4">
                          
                          <div class="card text-white bg-primary mb-3">
-                             <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
+                             <div class="card-body" onclick="window.location.href = 'ilstUser3.php';">
                                  ข้อมูลการนัดหมาย
+                                 
 
                          </div>
+                         
                      </div>
                  </div>
 

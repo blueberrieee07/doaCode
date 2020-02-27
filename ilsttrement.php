@@ -1,6 +1,6 @@
 <?php
 include('include/condb.php');
-$query = "SELECT * FROM tm_history a INNER JOIN users b ON a.id_users = b.id";
+$query = "SELECT * FROM users a INNER JOIN tm_history b ON a.id = b.id_users";
 $result = mysqli_query($condb, $query);
 $i = 0;
 ?>
