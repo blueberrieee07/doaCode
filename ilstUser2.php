@@ -50,7 +50,7 @@ $result = mysqli_query($condb, $query);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">การรักษา</h1>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -71,8 +71,8 @@ $result = mysqli_query($condb, $query);
                                                 <th width="10%">#</th>
                                                 <th width="30%">ชื่อ - นามสกุล</th>
                                                 <th width="15%">เพศ</th>
-                                                <th width="20%">email</th>
-                                                <th width="10%">จัดการ</th>
+                                                <th width="20%">ด้านการรักษา</th>
+                                                <th width="10%"></th>
                                             </tr>
                                         </thead>
 

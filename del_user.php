@@ -14,11 +14,11 @@ mysqli_close($condb);
 if ($result) {
     echo "<script type='text/javascript'>";
     // echo "alert('เพิ่มช้อมูลสำเร็จ');";
-    echo "window.location='listUser.php';";
+    echo "window.location='ilstUser.php';";
     echo "</script>";
 } else {
     echo "<script type='text/javascript'>";
     //echo "alert('Error!');";
-    echo "window.location='listUser.php';";
+    echo "window.location='ilstUser.php';";
     echo "</script>";
 }
