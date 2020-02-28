@@ -51,8 +51,8 @@ $result = mysqli_query($condb, $query);
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">การนัดหมาย</h1>
-                       
-                       <button name="summit" class="btn btn-sm btn-primary">เพิ่ม</button>
+
+                        <button name="summit" class="btn btn-sm btn-primary">เพิ่ม</button>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -84,11 +84,11 @@ $result = mysqli_query($condb, $query);
                                             <?php while ($row = mysqli_fetch_array($result)) { ?>
                                                 <tr>
                                                     <td class="text-center"><?php echo ++$i; ?></td>
-                                                    <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
-                                                    <td><?php echo $row['sax']; ?></td>
-                                                    <td><?php echo $row['day']; ?></td>
-                                                    <td><?php echo $row['phone']; ?></td>
-                                                    <td><?php echo $row['email']; ?></td>
+                                                    <td class="text-center"><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
+                                                    <td class="text-center"><?php echo $row['sax']; ?></td>
+                                                    <td class="text-center"><?php echo $row['day']; ?></td>
+                                                    <td class="text-center"><?php echo $row['phone']; ?></td>
+                                                    <td class="text-center"><?php echo $row['email']; ?></td>
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||

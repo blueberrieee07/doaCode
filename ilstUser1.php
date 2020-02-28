@@ -80,9 +80,9 @@ $result = mysqli_query($condb, $query);
                                             <?php while ($row = mysqli_fetch_array($result)) { ?>
                                                 <tr>
                                                     <td class="text-center"><?php echo ++$i; ?></td>
-                                                    <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
-                                                    <td><?php echo $row['sax']; ?></td>
-                                                    <td><?php echo $row['email']; ?></td>
+                                                    <td class="text-center"><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
+                                                    <td class="text-center"><?php echo $row['sax']; ?></td>
+                                                    <td class="text-center"><?php echo $row['email']; ?></td>
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||
