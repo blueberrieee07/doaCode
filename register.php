@@ -58,17 +58,13 @@
                                     <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
                                 </div>
                             </div>
-                            <br>
-                            <br>
+
+
 
                             <button type="submit" name="submit" class=" col-sm-12 btn btn-primary btn-user btn-block">
-                                <br>
+
                                 Register Account
 
-
-
-                                <br>
-                                <br>
                             </button>
                         </form>
 

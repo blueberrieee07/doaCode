@@ -54,6 +54,7 @@
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" required name="password" placeholder="Password">
                     </div>
+
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
