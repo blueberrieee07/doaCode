@@ -10,7 +10,7 @@
 <body>
       <h1 class="text-center">ค่าใช่จ่ายในการรักษา</h1> 
      <div>
-     <h1 > ชื่อ <input type="text"id="fname" name="fname" value="gggg"> </h1>
+     <h1 > ชื่อ <input type="text"id="fname" name="fname"> </h1>
      <h1 > ที่อยุ่ <input type="text"id="address" name="address"> </h1>
      <h1 > เบอร์โทร <input type="text"id="tel" name="tel"> </h1>
      <h1 > วัน เดือน ปี <input type="text"id="date" name="date"> </h1>
