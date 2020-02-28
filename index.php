@@ -135,14 +135,15 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- Color System -->
                     <div class="row">
 <<<<<<< HEAD
 
 =======
                         <div class="col-lg-6 mb-4">
+                            <div class="card bg-primary text-white shadow">
                                 <div class="card-body">
-                                    
+                                    <button class="btn btn-sm btn-primary">"ข้อมูลผู้ใช้งาน</button>
 
 
                                 </div>
@@ -151,8 +152,11 @@
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-success text-white shadow">
                                 <div class="card-body">
-                                   
-                               
+                                    ข้อมูลการรักษา
+                                    <div class="text-white-50 small"></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-info text-white shadow">
                                 <div class="card-body">
