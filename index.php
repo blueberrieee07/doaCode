@@ -135,9 +135,41 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Color System -->
+                    
                     <div class="row">
+<<<<<<< HEAD
 
+=======
+                        <div class="col-lg-6 mb-4">
+                                <div class="card-body">
+                                    
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-success text-white shadow">
+                                <div class="card-body">
+                                   
+                               
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-info text-white shadow">
+                                <div class="card-body">
+                                    ข้อมูลการนัดหมาย
+                                    <div class="text-white-50 small"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-warning text-white shadow">
+                                <div class="card-body">
+                                    แจ้งเตือน
+                                    <div class="text-white-50 small"></div>
+                                </div>
+                            </div>
+                        </div>
+>>>>>>> 8625f0d9ad38d0e4f57ebde64bba75b230d599ca
 
                         <div class="col-lg-6 mb-4">
 
@@ -150,11 +182,44 @@
                         </div>
 
                         <div class="col-lg-6 mb-4">
+                         
+                         <div class="card text-white bg-dark mb-3">
+                             <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
+                                 ประวัติการรักษา
 
-                            <div class="card text-white bg-dark mb-3">
-                                <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
-                                    ประวัติการรักษา
+                         </div>
+                     </div>
+                 </div>
 
+              
+                 <div class="col-lg-6 mb-4">
+                         
+                         <div class="card text-white bg-primary mb-3">
+                             <div class="card-body" onclick="window.location.href = 'ilstUser3.php';">
+                                 ข้อมูลการนัดหมาย
+                                 
+
+                         </div>
+                         
+                     </div>
+                 </div>
+
+                 <div class="col-lg-6 mb-4">
+                         
+                         <div class="card text-white bg-warning mb-3">
+                             <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
+                                 พิมพ์รายงาน
+
+                         </div>
+                     </div>
+                 </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="card bg-primary ">
+                            <div class="card bg-info text-white shadow">  
+                                <div class="card-body" class="card-body" onclick="window.location.href = 'ilstUser5.php';">
+                                    ข่าวทันตกรรม
+                                    
                                 </div>
                             </div>
                         </div>
