@@ -137,44 +137,6 @@
                     </div>
                     <!-- Color System -->
                     <div class="row">
-<<<<<<< HEAD
-
-=======
-                        <div class="col-lg-6 mb-4">
-                            <div class="card bg-primary text-white shadow">
-                                <div class="card-body">
-                                    <button class="btn btn-sm btn-primary">"ข้อมูลผู้ใช้งาน</button>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="card bg-success text-white shadow">
-                                <div class="card-body">
-                                    ข้อมูลการรักษา
-                                    <div class="text-white-50 small"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="card bg-info text-white shadow">
-                                <div class="card-body">
-                                    ข้อมูลการนัดหมาย
-                                    <div class="text-white-50 small"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="card bg-warning text-white shadow">
-                                <div class="card-body">
-                                    แจ้งเตือน
-                                    <div class="text-white-50 small"></div>
-                                </div>
-                            </div>
-                        </div>
->>>>>>> 8625f0d9ad38d0e4f57ebde64bba75b230d599ca
-
                         <div class="col-lg-6 mb-4">
 
                             <div class="card text-white bg-danger mb-3 ">
@@ -184,71 +146,27 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-lg-6 mb-4">
-                         
-                         <div class="card text-white bg-dark mb-3">
-                             <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
-                                 ประวัติการรักษา
-
-                         </div>
-                     </div>
-                 </div>
-
-              
-                 <div class="col-lg-6 mb-4">
-                         
-                         <div class="card text-white bg-primary mb-3">
-                             <div class="card-body" onclick="window.location.href = 'ilstUser3.php';">
-                                 ข้อมูลการนัดหมาย
-                                 
-
-                         </div>
-                         
-                     </div>
-                 </div>
-
-                 <div class="col-lg-6 mb-4">
-                         
-                         <div class="card text-white bg-warning mb-3">
-                             <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
-                                 พิมพ์รายงาน
-
-                         </div>
-                     </div>
-                 </div>
-
-                    <div class="col-lg-6 mb-4">
-                        <div class="card bg-primary ">
-                            <div class="card bg-info text-white shadow">  
-                                <div class="card-body" class="card-body" onclick="window.location.href = 'ilstUser5.php';">
-                                    ข่าวทันตกรรม
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-6 mb-4">
-
-                            <div class="card text-white bg-primary mb-3">
+                            <div class="card text-white bg-dark mb-3">
                                 <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
-                                    ข้อมูลการนัดหมาย
-
+                                    ประวัติการรักษา
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-lg-6 mb-4">
-
+                            <div class="card text-white bg-primary mb-3">
+                                <div class="card-body" onclick="window.location.href = 'ilstUser3.php';">
+                                    ข้อมูลการนัดหมาย
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
                             <div class="card text-white bg-warning mb-3">
                                 <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
                                     พิมพ์รายงาน
-
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-primary ">
                                 <div class="card bg-info text-white shadow">
@@ -258,9 +176,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-header">Dropdown Header:</div>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </div>
+                    </div>
+                    <!-- Card Body -->
 
-
+                    <!-- Pie Chart -->
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
                             <div class="dropdown-header">Dropdown Header:</div>
                             <a class="dropdown-item" href="#">Action</a>
@@ -270,24 +199,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card Body -->
 
-                <!-- Pie Chart -->
-                <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                        <div class="dropdown-header">Dropdown Header:</div>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
+                </span>
             </div>
-
-            </span>
         </div>
-    </div>
     </div>
 
 
