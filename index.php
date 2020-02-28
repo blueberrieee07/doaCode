@@ -171,7 +171,7 @@
                             <div class="card bg-primary ">
                                 <div class="card bg-info text-white shadow">
                                     <div class="card-body" class="card-body" onclick="window.location.href = 'ilstUser5.php';">
-                                        ข่าวทันตกรรม
+                                        ประวัติการรักษา
 
                                     </div>
                                 </div>
