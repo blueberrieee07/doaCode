@@ -162,7 +162,7 @@
                         </div>
                         <div class="col-lg-6 mb-4">
                             <div class="card text-white bg-warning mb-3">
-                                <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
+                                <div class="card-body" onclick="window.location.href = 'test.php';">
                                     พิมพ์รายงาน
                                 </div>
                             </div>
@@ -171,7 +171,7 @@
                             <div class="card bg-primary ">
                                 <div class="card bg-info text-white shadow">
                                     <div class="card-body" class="card-body" onclick="window.location.href = 'ilstUser5.php';">
-                                        ข่าวทันตกรรม
+                                        ประวัติผู้ใช้งาน
 
                                     </div>
                                 </div>

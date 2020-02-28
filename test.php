@@ -1,3 +1,10 @@
+<?php
+include('include/condb.php');
+$query = "SELECT * FROM users where 1 ";
+$result = mysqli_query($condb, $query);
+?>
+<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,8 +25,11 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-
-
+        @media print {
+            .hide-prith {
+                display: none;
+            }
+        }
     </style>
 
 <body>
@@ -31,7 +41,7 @@
             <input type="text" name="lastname" class="form-control form-control-user" id="exampleLastName" placeholder="pattarxxxx">
         </div>
         <div class="col-sm-6">ที่อยู่
-            <input type="text" name="lastname" class="form-control form-control-user" id="exampleLastName" placeholder="1057/52ลาดพร้าว">
+            <input type="text" name="address" class="form-control form-control-user" id="exampleLastName" placeholder="1057/52ลาดพร้าว">
         </div>
     </div>
     <br>
@@ -39,10 +49,10 @@
     </div>
     <div class="row">
         <div class="col-sm-4">เบอร์โทร
-            <input type="text" name="lastname" class="form-control form-control-user" id="exampleLastName" placeholder="08x-xxxx-xxx">
+            <input type="text" name="phone" class="form-control form-control-user" id="exampleLastName" placeholder="08x-xxxx-xxx">
         </div>
         <div class="col-sm-4">วัน/เดือน/ปี
-            <input type="date" name="lastname" class="form-control form-control-user" id="exampleLastName" placeholder="pattarxxxx"><br>
+            <input type="date" name="day" class="form-control form-control-user" id="exampleLastName" placeholder="pattarxxxx"><br>
         </div>
 
         <div class="col-sm-4 ">เพศ
@@ -87,10 +97,11 @@
         <tbody>
             <?php while ($row = mysqli_fetch_array($result)) { ?>
                 <tr>
+
                     <td class="text-center"><?php echo ++$i; ?></td>
-                    <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
-                    <td><?php echo $row['sax']; ?></td>
-                    <td><?php echo $row['email']; ?></td>
+                    <td class="text-center"><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
+                    <td class="text-center"><?php echo $row['sax']; ?></td>
+                    <td class="text-center"><?php echo $row['email']; ?></td>
                     <td class="text-center">
                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                         ||
@@ -99,6 +110,10 @@
             <?php  } ?>
         </tbody>
     </table>
+
+
+    <input onclick="javascript:window.print()" type="button" class="hide-prith" value="คลิ๊กเพื่อ Print หน้านี้" name="print2">
+
 </body>
 
 </html>
