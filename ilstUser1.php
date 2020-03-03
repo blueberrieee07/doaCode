@@ -91,7 +91,7 @@ $result = mysqli_query($condb, $query);
                                             <?php  } ?>
                                         </tbody>
                                     </table>
-
+                                    <a class="btn btn-primary" href="updateilst.php">เพิ่มรายการ</a>
                                 </div>
 
                             </div>

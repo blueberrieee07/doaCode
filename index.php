@@ -49,14 +49,14 @@
 
 
 
-                 
+
                     <!-- Color System -->
                     <div class="row">
                         <div class="col-lg-6 mb-4">
 
                             <div class="card text-white bg-danger mb-3 ">
                                 <div class="card-body" onclick="window.location.href = 'ilstUser1.php';">
-                                    ประวัติผู้รับบริการทันตกรรม
+                                    ประวัติผู้ใช้งาน
 
                                 </div>
                             </div>
@@ -87,9 +87,9 @@
                                 <div class="card bg-info text-white shadow">
                                     <div class="card-body" class="card-body" onclick="window.location.href = 'ilstUser5.php';">
 
-                                    
 
-                                        ประวัติผู้ใช้งาน
+
+                                        ประวัติผู้เข้ารับบริการทางทันตกรรม
 
 
                                     </div>
