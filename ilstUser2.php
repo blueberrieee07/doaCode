@@ -97,7 +97,7 @@ $i = 0;
                                             <?php  } ?>
                                         </tbody>
                                     </table>
-
+                                    <a class="btn btn-primary" href="ilstUser22.php">เพิ่มรายการ</a>
                                 </div>
 
                             </div>
