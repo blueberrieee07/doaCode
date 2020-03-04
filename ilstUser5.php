@@ -91,7 +91,7 @@ $result = mysqli_query($condb, $query);
                                             <?php  } ?>
                                         </tbody>
                                     </table>
-
+                                    <a class="btn btn-primary" href="ilstUser5update.php">เพิ่มรายการ</a>
                                 </div>
 
                             </div>
@@ -141,9 +141,10 @@ $result = mysqli_query($condb, $query);
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
-            </div>
-        </div>
+            </div> 
+        </div> 
     </div>
+    
 
 
     <!-- Bootstrap core JavaScript-->
