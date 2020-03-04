@@ -7,7 +7,7 @@ $id = $_GET["id"];
 //2. query ข้อมูลจากตาราง: 
 $sql = "SELECT * FROM users WHERE id=$id ";
 $result = mysqli_query($condb, $sql);
-$row = mysqli_fetch_array($result);
+// $row = mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +74,7 @@ $row = mysqli_fetch_array($result);
 
                                 <div class="card-body">
 
-                                    <form action="update_edit.php" method="POST">
+                                    <form action="updateilstdb.php" method="POST">
                                         <div class="form-group row">
                                             <div class="col-md-12 col-lg-4">
                                                 <label for="">ซื่อ</label>
@@ -176,22 +176,22 @@ $row = mysqli_fetch_array($result);
                                         <div class="form-group row">
                                             <div class="col-md-6 col-lg-4">
                                                 <label for="">มหาวิทยาลัย</label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
+                                                <input type="text" name="university" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['university']; ?>">
                                             </div>
                                             <div class="col-md-6 col-lg-4">
                                                 <label for="">สาขา</label>
-                                                <input type="text" name="number" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['number']; ?>">
+                                                <input type="text" name="branch" class="form-control form-control-user" placeholder="สาขา" value="<?php echo $row['branch']; ?>">
                                             </div>
                                             <div class="col-md-6 col-lg-4">
                                                 <label for="">ปีจบการศึกษา</label>
-                                                <input type="num" name="number" class="form-control form-control-user" placeholder="ปีจบการศึกษา" value="<?php echo $row['number']; ?>">
+                                                <input type="num" name="graduationyear" class="form-control form-control-user" placeholder="ปีจบการศึกษา" value="<?php echo $row['graduationyear']; ?>">
                                             </div>
 
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-md-6 col-lg-4">
                                                 <label for="">ระบุ </label><label class=""> *เฉพาะทันตเเพทย์* </label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
+                                                <input type="text" name="specifically" class="form-control form-control-user" placeholder="เฉพาะทันตเเพทย์" value="<?php echo $row['specifically']; ?>">
                                             </div>
 
                                         </div>
