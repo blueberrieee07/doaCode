@@ -32,7 +32,7 @@
    <li class="nav-item">
      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
        <i class="fas fa-fw fa-cog"></i>
-       <span>ตั้งค่า</span>
+       <span>ราคา&โปรโมชั่น</span>
      </a>
      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
        <div class="bg-white py-2 collapse-inner rounded">
@@ -53,59 +53,14 @@
 
      เมนู
    </div>
-
-   <!-- Nav Item - Pages Collapse Menu -->
-   <li class="nav-item">
-     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-       <i class="fas fa-fw fa-folder"></i>
-       <span>บริการทางทันตกรรม</span>
-     </a>
-     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-       <div class="bg-white py-2 collapse-inner rounded">
-         <h6 class="collapse-header">ข้อมูลการรักษา:</h6>
-         <a class="collapse-item" href="login.html">ทันตกรรมจัดฟัน</a>
-         <a class="collapse-item" href="register.html">ทันตกรรมอุดฟัน</a>
-         <a class="collapse-item" href="forgot-password.html">ถอนฟัน</a>
-         <a class="collapse-item" href="forgot-password.html">ฟันปลอม</a>
-         <a class="collapse-item" href="404.html">รักษารากฟัน</a>
-         <a class="collapse-item" href="blank.html">ทันตกรรมเพื่อความสวยงาม</a>
-       </div>
-     </div>
    </li>
 
    <!-- Nav Item - Charts -->
    <li class="nav-item">
      <a class="nav-link" href="charts.html">
        <i class="fas fa-fw fa-tags"></i>
-       <span>ราคา&โปรโมชั่น</span></a>
+       <span>รายงานสรุป</span></a>
    </li>
-
-   <!-- Nav Item - Tables -->
-   <li class="nav-item">
-     <a class="nav-link" href="calendar.php
-     
-     
-     ">
-       <i class="fas fa-fw fa-calendar-day"></i>
-       <span>ปฏิทินการรักษา</span></a>
-   </li>
-   <!-- Nav Item - Tables -->
-   <li class="nav-item">
-     <a class="nav-link" href="tables.html">
-       <i class="fas fa-fw fa-address-book"></i>
-       <span>เกี่ยวกับเรา</span></a>
-   </li>
-   <!-- Nav Item - Tables -->
-   <li class="nav-item">
-     <a class="nav-link" href="tables.html">
-       <i class="fas fa-fw fa-user-nurse"></i>
-       <span>ทันตแพทย์</span></a>
-   </li>
-   <!-- Nav Item - Tables -->
-   <li class="nav-item">
-     <a class="nav-link" href="tables.html">
-       <i class="fas fa-fw fa-hand-holding-usd"></i>
-       <span>ค่าบริการ</span></a>
    </li>
    <li class="nav-item">
      <a class="nav-link" href="login.php">
