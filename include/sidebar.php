@@ -55,13 +55,21 @@
    </div>
    </li>
 
-   <!-- Nav Item - Charts -->
+   <!-- Nav Item - Pages Collapse Menu -->
+  
    <li class="nav-item">
-     <a class="nav-link" href="charts.html">
-       <i class="fas fa-fw fa-tags"></i>
-       <span>รายงานสรุป</span></a>
+     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+       <i class="fas fa-fw fa-cog"></i>
+       <span>รายงานสรุป</span>
+     </a>
+     <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+       <div class="bg-white py-2 collapse-inner rounded">
+         <h6 class="collapse-header">Custom Components:</h6>
+         <a class="collapse-item" href="graph.php">แสดงเป็นกราฟ</a>
+       </div>
+     </div>
    </li>
-   </li>
+   
    <li class="nav-item">
      <a class="nav-link" href="login.php">
        <i class="fas fa-fw fa-sign-out-alt"></i>
