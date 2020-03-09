@@ -120,13 +120,17 @@ $result = mysqli_query($condb, $sql);
                                                 <label for="">เลขบัตรประชาชน</label>
                                                 <input type="text" name="idcard" class="form-control form-control-user" placeholder="เลขบัตรประชาชน" value="<?php echo $row['idcard']; ?>">
                                             </div>
-                                            <div class="col-md-6 col-lg-4">
+                                            <div class="col-md-6 col-lg-2">
                                                 <label for="">วัน/เดือน/ปี</label>
                                                 <input type="date" name="date" class="form-control form-control-user" placeholder="วัน/เดือน/ปี" value="<?php echo $row['date']; ?>">
                                             </div>
                                             <div class="col-md-6 col-lg-4">
                                                 <label for="">Email</label>
                                                 <input type="text" name="email" class="form-control form-control-user" placeholder="Email" value="<?php echo $row['email']; ?>">
+                                            </div>
+                                            <div class="col-md-6 col-lg-2">
+                                                <label for="">Id User</label>
+                                                <input type="text" name="id" class="form-control form-control-user" placeholder="Id User" value="<?php echo $row['id']; ?>">
                                             </div>
 
                                         </div>

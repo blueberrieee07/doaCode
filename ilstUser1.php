@@ -68,12 +68,14 @@ $result = mysqli_query($condb, $query);
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr class="text-center">
-                                                <th width="10%">#</th>
-                                                <th width="30%">ชื่อ - นามสกุล</th>
-                                                <th width="15%">เพศ</th>
-                                                <th width="20%">email</th>
-                                                <th width="20%">เบอร์โทรศัพท์</th>
-                                                <th width="10%"></th>
+                                                <th width="">#</th>
+                                                <th width="">ชื่อ - นามสกุล</th>
+                                                <th width="">เพศ</th>
+                                                <th width="">email</th>
+                                                <th width="">เบอร์โทรศัพท์</th>
+                                                <th width="">Id User</th>
+                                                <th width="">จัดการ</th>
+                                            
                                             </tr>
                                         </thead>
 
@@ -85,7 +87,10 @@ $result = mysqli_query($condb, $query);
                                                     <td class="text-center"><?php echo $row['sax']; ?></td>
                                                     <td class="text-center"><?php echo $row['email']; ?></td>
                                                     <td class="text-center"><?php echo $row['phone']; ?></td>
+                                                    <td class="text-center"><?php echo $row['id']; ?></td>
                                                     <td class="text-center">
+                                                        <a href="updateilst.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">เพิ่ม</a>
+                                                        ||
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||
                                                         <a href="del_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>

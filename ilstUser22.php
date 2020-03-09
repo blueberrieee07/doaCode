@@ -7,7 +7,7 @@ $id = $_GET["id"];
 //2. query ข้อมูลจากตาราง: 
 $sql = "SELECT * FROM users WHERE id=$id ";
 $result = mysqli_query($condb, $sql);
-$row = mysqli_fetch_array($result);
+// $row = mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -120,15 +120,18 @@ $row = mysqli_fetch_array($result);
                                                 <label for="">เลขบัตรประชาชน</label>
                                                 <input type="text" name="idcard" class="form-control form-control-user" placeholder="เลขบัตรประชาชน" value="<?php echo $row['idcard']; ?>">
                                             </div>
-                                            <div class="col-md-6 col-lg-4">
+                                            <div class="col-md-6 col-lg-2">
                                                 <label for="">วัน/เดือน/ปี</label>
                                                 <input type="date" name="date" class="form-control form-control-user" placeholder="วัน/เดือน/ปี" value="<?php echo $row['date']; ?>">
                                             </div>
-                                            <div class="col-md-6 col-lg-4">
+                                            <div class="col-md-4 col-lg-4">
                                                 <label for="">Email</label>
                                                 <input type="text" name="email" class="form-control form-control-user" placeholder="Email" value="<?php echo $row['email']; ?>">
                                             </div>
-
+                                            <div class="col-md-6 col-lg-2">
+                                                <label for="">Id User</label>
+                                                <input type="text" name="email" class="form-control form-control-user" placeholder="Id User" value="<?php echo $row['id']; ?>">
+                                            </div>
                                         </div>
 
                                         <div class="form-group row">
