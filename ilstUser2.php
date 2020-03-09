@@ -73,10 +73,10 @@ $i = 0;
                                                 <th width="">ชื่อ - นามสกุล</th>
                                                 <th width="">เพศ</th>
                                                 <th width="">ลายละเอียดการรักษา</th>
-                                                
                                                 <th width="">การรักษา</th>
                                                 <th width="">วันที่</th>
-                                                <th width="">จัดการ</th>
+                                                <th width="">ค่าใช้จ่าย</th>
+                                                <th width="">การจัดการ</th>
                                             </tr>
                                         </thead>
 
@@ -88,7 +88,8 @@ $i = 0;
                                                     <td><?php echo $row['sax']; ?></td>
                                                     <td><?php echo $row['treatmentdetails']; ?></td>
                                                     <td><?php echo $row['treatment']; ?></td>
-                                                    <td><?php echo $row['day']; ?></td>
+                                                    <td><?php echo $row['datetime']; ?></td>
+                                                    <td><?php echo $row['amount']; ?></td>
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||

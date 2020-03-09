@@ -1,7 +1,8 @@
 <?php
 include('include/condb.php');
-$query = "SELECT * FROM users where 1 ";
+$query = "SELECT * FROM tm_history a INNER JOIN users b ON a.id_users = b.id";
 $result = mysqli_query($condb, $query);
+$i = 0;
 ?>
 <!DOCTYPE html>
 
@@ -91,6 +92,7 @@ $result = mysqli_query($condb, $query);
                 <th width="">การรักษา</th>
                 <th width="">รายละเอียด</th>
                 <th width="">ค่าใช้จ่าย</th>
+                <th width="">การจัดการ</th>
             </tr>
         </thead>
 
@@ -102,10 +104,12 @@ $result = mysqli_query($condb, $query);
                     <td class="text-center"><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
                     <td class="text-center"><?php echo $row['sax']; ?></td>
                     <td class="text-center"><?php echo $row['email']; ?></td>
+                    <td class="text-center"><?php echo $row['treatmentdetails']; ?></td>
+                    <td class="text-center"><?php echo $row['amount']; ?></td>
                     <td class="text-center">
-                        <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
+                        <a onclick="javascript:window.print()" href="update.php?id=<?php echo $row['id']; ?>" onclick="javascript:window.print()" class="btn btn-sm btn-warning">แก้ไข</a>
                         ||
-                        <a href="del_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
+                        <a onclick="javascript:window.print()" href="del_user.php?id=<?php echo $row['id']; ?>" onclick="javascript:window.print()" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
                 </tr>
             <?php  } ?>
         </tbody>

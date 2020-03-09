@@ -50,7 +50,7 @@ $result = mysqli_query($condb, $query);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">ประวัติผู้ใช้บริการ</h1>
+                        <h1 class="h3 mb-0 text-gray-800">ประวัติผู้ใช้งาน</h1>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -72,6 +72,7 @@ $result = mysqli_query($condb, $query);
                                                 <th width="30%">ชื่อ - นามสกุล</th>
                                                 <th width="15%">เพศ</th>
                                                 <th width="20%">email</th>
+                                                <th width="20%">เบอร์โทรศัพท์</th>
                                                 <th width="10%"></th>
                                             </tr>
                                         </thead>
@@ -83,6 +84,7 @@ $result = mysqli_query($condb, $query);
                                                     <td class="text-center"><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
                                                     <td class="text-center"><?php echo $row['sax']; ?></td>
                                                     <td class="text-center"><?php echo $row['email']; ?></td>
+                                                    <td class="text-center"><?php echo $row['phone']; ?></td>
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||

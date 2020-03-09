@@ -193,6 +193,13 @@ $row = mysqli_fetch_array($result);
                                                 <label for="">ระบุ </label><label class=""> *เฉพาะทันตเเพทย์* </label>
                                                 <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
                                             </div>
+                                            </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-6 col-lg-4">
+                                                <label for="">ระบุ </label><label class=""> *ลายละเอียดการรักษา* </label>
+                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
+                                            </div>
+
 
                                         </div>
                                         <div class="col-12 text-center pt-5">

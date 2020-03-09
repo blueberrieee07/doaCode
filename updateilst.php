@@ -170,29 +170,7 @@ $result = mysqli_query($condb, $sql);
                                                 <label for="">Password</label>
                                                 <input type="password" name="password" class="form-control form-control-user" placeholder="XXXXXX" value="">
                                             </div>
-                                        </div>
-                                        <div>ประวัติการศึกษา ____________________________________________________________________________________________________________________________________________________________________________________</div>
-
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">มหาวิทยาลัย</label>
-                                                <input type="text" name="university" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['university']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">สาขา</label>
-                                                <input type="text" name="branch" class="form-control form-control-user" placeholder="สาขา" value="<?php echo $row['branch']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">ปีจบการศึกษา</label>
-                                                <input type="num" name="graduationyear" class="form-control form-control-user" placeholder="ปีจบการศึกษา" value="<?php echo $row['graduationyear']; ?>">
-                                            </div>
-
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">ระบุ </label><label class=""> *เฉพาะทันตเเพทย์* </label>
-                                                <input type="text" name="specifically" class="form-control form-control-user" placeholder="เฉพาะทันตเเพทย์" value="<?php echo $row['specifically']; ?>">
-                                            </div>
+                                       
 
                                         </div>
                                         <div class="col-12 text-center pt-5">

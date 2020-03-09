@@ -75,6 +75,7 @@ $result = mysqli_query($condb, $query);
                                                 <th width="30%">ชื่อ - นามสกุล</th>
                                                 <th width="15%">เพศ</th>
                                                 <th width="20%">อีเมล์
+                                                <th width="20%">เบอร์โทรศัพท์
                                                 </th>
                                                 <th width="10%"></th>
                                             </tr>
@@ -87,6 +88,7 @@ $result = mysqli_query($condb, $query);
                                                     <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
                                                     <td><?php echo $row['sax']; ?></td>
                                                     <td><?php echo $row['email']; ?></td>
+                                                    <td><?php echo $row['phone']; ?></td>
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||

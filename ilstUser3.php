@@ -75,8 +75,7 @@ $result = mysqli_query($condb, $query);
                                                 <th width="15%">เพศ</th>
                                                 <th width="20%">วันที่นัดหมาย</th>
                                                 <th width="20%">เบอร์โทร</th>
-                                                <th width="20%">email</th>
-                                                <th width="20%">จัดการ</th>
+                                                
                                             </tr>
                                         </thead>
 

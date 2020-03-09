@@ -138,7 +138,7 @@ $row = mysqli_fetch_array($result);
                                             </div>
                                             <div class="col-md-6 col-lg-4">
                                                 <label for="">เบอร์โทรศัพท์</label>
-                                                <input type="text" name="number" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['number']; ?>">
+                                                <input type="text" name="phone" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['number']; ?>">
                                             </div>
 
                                         </div>
