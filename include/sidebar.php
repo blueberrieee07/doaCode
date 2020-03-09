@@ -32,12 +32,12 @@
    <li class="nav-item">
      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
        <i class="fas fa-fw fa-cog"></i>
-       <span>ราคา&โปรโมชั่น</span>
+       <span>เกี่ยวกับเรา</span>
      </a>
      <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
        <div class="bg-white py-2 collapse-inner rounded">
          <h6 class="collapse-header">Custom Components:</h6>
-         <a class="collapse-item" href="pire.php">เกี่ยวกับเรา</a>
+         <a class="collapse-item" href="pire.php">การรักษา</a>
        </div>
      </div>
    </li>
