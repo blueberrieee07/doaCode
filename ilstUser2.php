@@ -3,6 +3,13 @@ include('include/condb.php');
 $query = "SELECT * FROM tm_history a INNER JOIN users b ON a.id_users = b.id";
 $result = mysqli_query($condb, $query);
 $i = 0;
+if(isset($_REQUEST['id'])){
+    $delete = "DELETE FROM `tm_history` WHERE `tm_history`.`idtreatment` = $_REQUEST[id];";
+    $resultdelete = mysqli_query($condb, $delete);
+    echo "<script>window.location='ilstUser2.php'</script>";
+}else{
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +58,7 @@ $i = 0;
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">ด้านการรักษา
+                        <h1 class="h3 mb-0 text-gray-800">จัดการข้อมูลการรักษา
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -93,7 +100,7 @@ $i = 0;
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||
-                                                        <a href="del_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
+                                                        <a href="ilstUser2.php?id=<?php echo $row['idtreatment']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
                                                 </tr>
                                             <?php  } ?>
                                         </tbody>

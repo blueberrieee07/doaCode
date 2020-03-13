@@ -5,9 +5,10 @@ include('include/condb.php');  //ไฟล์เชื่อมต่อกั�
 $id = $_GET["id"];
 
 //2. query ข้อมูลจากตาราง: 
-$sql = "SELECT * FROM users WHERE id=$id ";
+$sql = "SELECT * FROM `users`";
 $result = mysqli_query($condb, $sql);
-// $row = mysqli_fetch_array($result);
+$row = mysqli_fetch_array($result);
+$total = mysqli_num_rows($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +60,7 @@ $result = mysqli_query($condb, $sql);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">ทันตแพทย์ และ เจ้าหน้าที่</h1>
+                        <h1 class="h3 mb-0 text-gray-800">เพิ่มด้านการรักษา</h1>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -70,155 +71,76 @@ $result = mysqli_query($condb, $sql);
                         <div class="col-lg-12 mb-4">
 
                             <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
+                            <div class="card shadow mb-4 ">
 
                                 <div class="card-body">
 
-                                    <form action="update_edit.php" method="POST">
-                                        <div class="form-group row">
-                                            <div class="col-md-12 col-lg-4">
-                                                <label for="">ซื่อ</label>
-                                                <input type="text" name="firstname" class="form-control form-control-user" placeholder="First Name" value="<?php echo $row['firstname']; ?>">
-                                            </div>
-                                            <div class="col-md-12 col-lg-4">
-                                                <label for="">นามสกุล</label>
-                                                <input type="text" name="lastname" class="form-control form-control-user" placeholder="Last Name" value="<?php echo $row['lastname']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-2">
-                                                <label for="">เพศ</label>
-                                                <select class="form-control" name="sax" required>
-                                                    <?php
-                                                    if ($row['sax'] == "ชาย") { ?>
-
-                                                        <option value="ชาย">ชาย</option>
-                                                        <option value="หญิง">หญิง</option>
-
-                                                    <?php  } elseif ($row['sax'] == "หญิง") { ?>
-
-                                                        <option value="หญิง">หญิง</option>
-                                                        <option value="ชาย">ชาย</option>
-
-                                                    <?php } else { ?>
-
-                                                        <option value="">เพศ</option>
-                                                        <option value="ชาย">ชาย</option>
-                                                        <option value="หญิง">หญิง</option>
-
-                                                    <?php    }  ?>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6 col-lg-2">
-
-                                                <label for="">อายุ</label>
-                                                <input type="text" name="age" class="form-control form-control-user" placeholder="อายุ" value="<?php echo $row['age']; ?>">
-                                            </div>
+                                    <form action="inserthitstory.php" method="POST">
+                                        <div class="form-group row mx-auto">
+                                        <php echo $row[firstname]; ?>
+                                          
                                         </div>
 
                                         <div class="form-group row">
+                                        <div class="col-md-6 col-lg-2">
+                                                <label for="">ชื่อ-นามสกุล</label>
+                                                <select class="form-control" name="firstname" required>
+                                                    <?php
+                                                    do{
+                                                         ?>
+
+                                                            <option value="<?php echo $row['id']; ?>">  <?php echo $row['firstname'] . " " . $row['lastname']; ?> </option>
+
+                                                            <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
+                                                        <?php    
+
+                                                        }while($row=mysqli_fetch_assoc($result));
+
+                                                   ?>
+                                                </select>
+                                            </div>
 
                                             <div class="col-md-6 col-lg-4">
-                                                <label for="">เลขบัตรประชาชน</label>
-                                                <input type="text" name="idcard" class="form-control form-control-user" placeholder="เลขบัตรประชาชน" value="<?php echo $row['idcard']; ?>">
+                                                <label for="">ค่าใช้จ่าย</label>
+                                                <input type="text" name="amount" class="form-control form-control-user" placeholder="ค่าใช้จ่าย" value="">
                                             </div>
                                             <div class="col-md-6 col-lg-2">
                                                 <label for="">วัน/เดือน/ปี</label>
-                                                <input type="date" name="date" class="form-control form-control-user" placeholder="วัน/เดือน/ปี" value="<?php echo $row['date']; ?>">
+                                                <input type="date" name="date" class="form-control form-control-user" placeholder="วัน/เดือน/ปี" value="">
                                             </div>
-                                            <div class="col-md-4 col-lg-4">
-                                                <label for="">Email</label>
-                                                <input type="text" name="email" class="form-control form-control-user" placeholder="Email" value="<?php echo $row['email']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-2">
-                                                <label for="">Id User</label>
-                                                <input type="text" name="email" class="form-control form-control-user" placeholder="Id User" value="<?php echo $row['id']; ?>">
-                                            </div>
+                                            
+                                            
                                         </div>
-
                                         <div class="form-group row">
                                             <div class="col-md-6 col-lg-8">
-                                                <label for="">ที่อยู่</label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">เบอร์โทรศัพท์</label>
-                                                <input type="text" name="number" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['number']; ?>">
+                                                <label for="">การรักษา</label>
+                                                <input type="text" name="treatment" class="form-control form-control-user" placeholder="" value="">
                                             </div>
 
                                         </div>
                                         <div class="form-group row">
-                                            <div class="col-md-6 col-lg-2">
-                                                <label for="">ตำเเหน่ง</label>
-                                                <select class="form-control" name="position" required>
-                                                    <?php
-                                                    if ($row['position'] == "ทันตเเพทย์") { ?>
-
-                                                        <option value="ทันตเเพทย์">ทันตเเพทย์</option>
-                                                        <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-
-                                                    <?php  } elseif ($row['position'] == "เจ้าหน้าที่") { ?>
-
-                                                        <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-                                                        <option value="ทันตเเพทย์">ทันตเเพทย์</option>
-
-                                                    <?php } else { ?>
-
-                                                        <option value="">ตำเเหน่ง</option>
-                                                        <option value="ทันตเเพทย์">ทันตเเพทย์</option>
-                                                        <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-
-                                                    <?php    }  ?>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">Password</label>
-                                                <input type="password" name="password" class="form-control form-control-user" placeholder="XXXXXX" value="">
-                                            </div>
-                                        </div>
-                                        <div>ประวัติการศึกษา ____________________________________________________________________________________________________________________________________________________________________________________</div>
-
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">มหาวิทยาลัย</label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">สาขา</label>
-                                                <input type="text" name="number" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['number']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">ปีจบการศึกษา</label>
-                                                <input type="num" name="number" class="form-control form-control-user" placeholder="ปีจบการศึกษา" value="<?php echo $row['number']; ?>">
+                                            <div class="col-md-6 col-lg-8">
+                                                <label for="">ลายละเอียดการรักษา</label>
+                                                <input type="text" name="treatmentdetails" class="form-control form-control-user" placeholder="" value="">
                                             </div>
 
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">ระบุ </label><label class=""> *เฉพาะทันตเเพทย์* </label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
-                                            </div>
-                                            </div>
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">ระบุ </label><label class=""> *ลายละเอียดการรักษา* </label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
-                                            </div>
-
-
-                                        </div>
+                                       
+                
                                         <div class="col-12 text-center pt-5">
 
-                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                            
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                 บันทึก
-
                                             </button>
-                                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+                                            <button type="button" name="cancel" class="col-sm-2  btn btn-danger" onclick="window.history.back()">
 
                                                 ยกเลิก
 
                                             </button>
 
                                         </div>
+                                                   
                                     </form>
                                 </div>
 

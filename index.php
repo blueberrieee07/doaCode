@@ -56,7 +56,7 @@
 
                             <div class="card text-white bg-danger mb-3 ">
                                 <div class="card-body" onclick="window.location.href = 'ilstUser1.php';">
-                                    ประวัติผู้ใช้งาน
+                                    ข้อมูลผู้ใช้งาน
 
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                         <div class="col-lg-6 mb-4">
                             <div class="card text-white bg-dark mb-3">
                                 <div class="card-body" onclick="window.location.href = 'ilstUser2.php';">
-                                    ประวัติการรักษา
+                                    ข้อมูลการรักษา
                                 </div>
                             </div>
                         </div>
@@ -89,8 +89,7 @@
 
 
 
-                                        ประวัติผู้เข้ารับบริการทางทันตกรรม
-
+                                        ข้อมูลผู้เข้ารับบริการทันตกรรม
 
                                     </div>
                                 </div>

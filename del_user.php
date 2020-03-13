@@ -14,7 +14,7 @@ mysqli_close($condb);
 if ($result) {
     echo "<script type='text/javascript'>";
     // echo "alert('เพิ่มช้อมูลสำเร็จ');";
-    echo "window.location='ilstUser.php';";
+    echo "window.location='ilstUser1.php';";
     echo "</script>";
 } else {
     echo "<script type='text/javascript'>";

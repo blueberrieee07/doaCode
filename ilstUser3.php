@@ -1,7 +1,15 @@
 <?php
 include('include/condb.php');
-$query = "SELECT * FROM anappointment a INNER JOIN users b ON a.id_users = b.id ";
+$query = "SELECT * FROM anappointment a INNER JOIN users b ON a.id_users = b.id";
 $result = mysqli_query($condb, $query);
+$i = 0;
+if(isset($_REQUEST['id'])){
+    $delete = "DELETE FROM `tm_history` WHERE `tm_history`.`idtreatment` = $_REQUEST[id];";
+    $resultdelete = mysqli_query($condb, $delete);
+    echo "<script>window.location='ilstUser2.php'</script>";
+}else{
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,9 +58,7 @@ $result = mysqli_query($condb, $query);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">การนัดหมาย</h1>
-
-                        <button name="summit" class="btn btn-sm btn-primary">เพิ่ม</button>
+                        <h1 class="h3 mb-0 text-gray-800">ข้อมูลการนัดหมาย
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -70,28 +76,28 @@ $result = mysqli_query($condb, $query);
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr class="text-center">
-                                                <th width="10%">#</th>
-                                                <th width="30%">ชื่อ - นามสกุล</th>
-                                                <th width="15%">เพศ</th>
-                                                <th width="20%">วันที่นัดหมาย</th>
-                                                <th width="20%">เบอร์โทร</th>
-                                                
+                                                <th width="">#</th>
+                                                <th width="">ชื่อ - นามสกุล</th>
+                                                <th width="">เพศ</th>
+                                                <th width="">ลายละเอียดการนัดหมาย</th>
+                                                <th width="">วันที่</th>
+                                                <th width="">การจัดการ</th>
                                             </tr>
                                         </thead>
 
                                         <tbody>
                                             <?php while ($row = mysqli_fetch_array($result)) { ?>
-                                                <tr>
+                                                <tr class="text-center">
                                                     <td class="text-center"><?php echo ++$i; ?></td>
-                                                    <td class="text-center"><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
-                                                    <td class="text-center"><?php echo $row['sax']; ?></td>
-                                                    <td class="text-center"><?php echo $row['day']; ?></td>
-                                                    <td class="text-center"><?php echo $row['phone']; ?></td>
-                                                    <td class="text-center"><?php echo $row['email']; ?></td>
+                                                    <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
+                                                    <td><?php echo $row['sax']; ?></td>
+                                                    <td><?php echo $row['detel']; ?></td>
+                                                    <td><?php echo $row['day']; ?></td>
+                                                    
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||
-                                                        <a href="del_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
+                                                        <a href="ilstUser2.php?id=<?php echo $row['idtreatment']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
                                                 </tr>
                                             <?php  } ?>
                                         </tbody>

@@ -59,7 +59,7 @@ $result = mysqli_query($condb, $sql);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">ทันตแพทย์ และ เจ้าหน้าที่</h1>
+                        <h1 class="h3 mb-0 text-gray-800">เพิ่มประวัติผู้ใช้งาน</h1>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -184,11 +184,11 @@ $result = mysqli_query($condb, $sql);
                                                 บันทึก
 
                                             </button>
-                                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+                                            <button type="button" name="cancel" class="col-sm-2  btn btn-danger" onclick="window.history.back()">
 
-                                                ยกเลิก
+ยกเลิก
 
-                                            </button>
+</button>
 
                                         </div>
                                     </form>

@@ -59,7 +59,7 @@ $row = mysqli_fetch_array($result);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">ทันตแพทย์ และ เจ้าหน้าที่</h1>
+                        <h1 class="h3 mb-0 text-gray-800">จัดการผู้เข้ารับบริการทันตกรรม
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -116,86 +116,19 @@ $row = mysqli_fetch_array($result);
 
                                         <div class="form-group row">
 
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">เลขบัตรประชาชน</label>
-                                                <input type="text" name="idcard" class="form-control form-control-user" placeholder="เลขบัตรประชาชน" value="<?php echo $row['idcard']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">วัน/เดือน/ปี</label>
-                                                <input type="date" name="date" class="form-control form-control-user" placeholder="วัน/เดือน/ปี" value="<?php echo $row['date']; ?>">
-                                            </div>
+                                            
                                             <div class="col-md-6 col-lg-4">
                                                 <label for="">Email</label>
                                                 <input type="text" name="email" class="form-control form-control-user" placeholder="Email" value="<?php echo $row['email']; ?>">
                                             </div>
-
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-8">
-                                                <label for="">ที่อยู่</label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
+                                            <div class="col-md-12 col-lg-4">
                                                 <label for="">เบอร์โทรศัพท์</label>
-                                                <input type="text" name="number" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['number']; ?>">
+                                                <input type="text" name="phone" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['เบอร์โทรศัพท์']; ?>">
                                             </div>
 
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-2">
-                                                <label for="">ตำเเหน่ง</label>
-                                                <select class="form-control" name="position" required>
-                                                    <?php
-                                                    if ($row['position'] == "ทันตเเพทย์") { ?>
-
-                                                        <option value="ทันตเเพทย์">ทันตเเพทย์</option>
-                                                        <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-
-                                                    <?php  } elseif ($row['position'] == "เจ้าหน้าที่") { ?>
-
-                                                        <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-                                                        <option value="ทันตเเพทย์">ทันตเเพทย์</option>
-
-                                                    <?php } else { ?>
-
-                                                        <option value="">ตำเเหน่ง</option>
-                                                        <option value="ทันตเเพทย์">ทันตเเพทย์</option>
-                                                        <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-
-                                                    <?php    }  ?>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">Password</label>
-                                                <input type="password" name="password" class="form-control form-control-user" placeholder="XXXXXX" value="">
-                                            </div>
-                                        </div>
-                                        <div>ประวัติการศึกษา ____________________________________________________________________________________________________________________________________________________________________________________</div>
-
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">มหาวิทยาลัย</label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">สาขา</label>
-                                                <input type="text" name="number" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['number']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">ปีจบการศึกษา</label>
-                                                <input type="num" name="number" class="form-control form-control-user" placeholder="ปีจบการศึกษา" value="<?php echo $row['number']; ?>">
-                                            </div>
-
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">ระบุ </label><label class=""> *เฉพาะทันตเเพทย์* </label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
-                                            </div>
-
-                                        </div>
-                                        <div class="col-12 text-center pt-5">
+                                        
+                                        <div>
 
                                             <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
