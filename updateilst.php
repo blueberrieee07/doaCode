@@ -130,7 +130,7 @@ $result = mysqli_query($condb, $sql);
                                             </div>
                                             <div class="col-md-6 col-lg-2">
                                                 <label for="">Id User</label>
-                                                <input type="text" name="id" class="form-control form-control-user" placeholder="Id User" value="<?php echo $row['id']; ?>">
+                                                <input readonly type="text" name="id" class="form-control form-control-user" placeholder="Id User" value="<?php echo $row['id']; ?>">
                                             </div>
 
                                         </div>

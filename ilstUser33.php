@@ -103,7 +103,7 @@ $total = mysqli_num_rows($result);
                                            
                                             <div class="col-md-6 col-lg-2">
                                                 <label for="">วัน/เดือน/ปี</label>
-                                                <input type="date" name="date" class="form-control form-control-user" placeholder="วัน/เดือน/ปี" value="">
+                                                <input type="datetime-local"  name="date">
                                             </div>
                                             
                                             

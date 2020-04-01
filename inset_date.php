@@ -7,7 +7,7 @@ include('include/condb.php');
 $check = "INSERT INTO anappointment
 (
   id_users,
-  day,
+  daytime,
   detel
 )
 VALUES

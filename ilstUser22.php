@@ -114,14 +114,15 @@ $total = mysqli_num_rows($result);
                                         <div class="form-group row">
                                             <div class="col-md-6 col-lg-8">
                                                 <label for="">การรักษา</label>
-                                                <input type="text" name="treatment" class="form-control form-control-user" placeholder="" value="">
+                                                <input type="text" name="treatment" class="form-control form-control-user" placeholder="" value="" required>
                                             </div>
 
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-md-6 col-lg-8">
                                                 <label for="">ลายละเอียดการรักษา</label>
-                                                <input type="text" name="treatmentdetails" class="form-control form-control-user" placeholder="" value="">
+                                                <input  type="text" name="treatmentdetails" class="form-control form-control-user" placeholder="" value="" required>
+                                                
                                             </div>
 
                                         </div>

@@ -92,7 +92,7 @@ if(isset($_REQUEST['id'])){
                                                     <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
                                                     <td><?php echo $row['sax']; ?></td>
                                                     <td><?php echo $row['detel']; ?></td>
-                                                    <td><?php echo $row['day']; ?></td>
+                                                    <td><?php echo $row['daytime']; ?></td>
                                                     
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
