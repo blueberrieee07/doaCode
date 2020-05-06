@@ -82,8 +82,8 @@ if(isset($_REQUEST['id'])){
                                                 <th width="">ลายละเอียดการรักษา</th>
                                                 <th width="">การรักษา</th>
                                                 <th width="">วันที่</th>
-                                                <th width="">ค่าใช้จ่าย</th>
                                                 <th width="">การจัดการ</th>
+                                                <th width="">พิมพ์</th>
                                             </tr>
                                         </thead>
 
@@ -96,11 +96,16 @@ if(isset($_REQUEST['id'])){
                                                     <td><?php echo $row['treatmentdetails']; ?></td>
                                                     <td><?php echo $row['treatment']; ?></td>
                                                     <td><?php echo $row['datetime']; ?></td>
-                                                    <td><?php echo $row['amount']; ?></td>
+                                                    
                                                     <td class="text-center">
                                                         <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                         ||
+                    
                                                         <a href="ilstUser2.php?id=<?php echo $row['idtreatment']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
+                                                    <td class="text-center">
+                                                        
+                                                        <a href="testt.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">พิมพ์</a>
+                                                        
                                                 </tr>
                                             <?php  } ?>
                                         </tbody>
